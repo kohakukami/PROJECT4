@@ -180,7 +180,7 @@ body{
 
 /* MOBILE */
 
-@media screen and (min-width:480px) {
+@media screen and (min-width:0px) {
     .drop{
         margin-left: 2%;
     }
