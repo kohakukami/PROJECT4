@@ -273,6 +273,9 @@ body{
         color: deepskyblue;
         font-weight: 600;
     }
+    search{
+    margin-left:-10px;
+    }
     #toogle{
         display: none;
     }
