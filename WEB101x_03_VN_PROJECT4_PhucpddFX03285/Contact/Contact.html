@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Meta -->  
+        <title>News</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="CREVEA,HOT NEWS,ABOUT US,BUSINESS,contact with us,asm 4">
+        <meta name="description" content="were creveaing">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+        <style>
+            p{
+                line-height: 1;
+            }
+            input{
+                border: solid 1px grey;
+                border-radius: 10px;
+                display: block;
+            }
+            textarea{
+                border: solid 1px grey;
+                border-radius: 10px;
+            }
+            button{
+                border: solid 1px gray;
+                border-radius: 15px;
+            }
+            #submit{
+                border: solid 1px orange;
+                margin-left: 70%;
+            }
+            hr{
+                color:white;
+            }
+            body{
+                font-family: 'poppins',sans-serif;
+            }
+            .b{
+                font-weight: bold;
+            }
+            #map{
+                border: solid 2px black;
+            }
+            @media screen and (min-width:768px){
+                #submit{
+                    margin-left: 60%;
+                }
+                h1{
+                    font-size: 20px;
+                }
+            }
+            @media screen and (min-width:1200px){
+                #map{
+                    height: 300px;
+                }
+                #p1{
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+<!-- HEADER -->
+    <!-- for mobile screen only -->
+    <header class="container-fluid bg-white d-md-none d-block">
+        <div class="row pt-4">
+            <span class="col-1 d-block d-md-none">🔽</span> 
+            <h3 class="text-primary col-10 d-block text-center" >CREVEA Inc.</h3>
+            <span class="col-1">🔍</span>
+        </div>
+    </header>
+    <!-- for md screen and above -->
+    <header class="container-fluid bg-primary d-md-block d-none">
+        <div class="row pt-4">
+            <span class="col-1 d-block d-md-none ">🔽</span> 
+                <h3 class="text-white col-xl-5 col-md-4 col-10 d-md-block d-none text-md-left text-lg-center" >CREVEA Inc.</h3>
+                <a class="text-white col-xl-1 col-md-1 d-none d-md-block h6" href="../Home/index.html">Home</a>
+                <a class="text-white col-xl-1 col-md-2 d-none d-md-block h6" href="../Business/Business.html">OUR BUSINESS</a>
+                <a class="text-white col-xl-1 col-md-2 d-none d-md-block h6" href="../About/About.html">ABOUT US</a>
+                <a class="text-white col-xl-1 col-md-1 d-none d-md-block h6" href="../News/News.html">NEWS</a >
+                <a class="text-warning col-xl-1 col-md-1 d-none d-md-block h6" href="../Contact/Contact.html">CONTACT</a>
+            <span class="col-1 text-md-right">🔍</span>
+        </div>
+    </header>
+    <!-- Image -->
+    <img id="p1" class="img-fluid"src="../image/image (4).jpg" alt="we're creveaing">
+    <br>
+        <!-- CONTACT INFO -->
+        <div class="container-fluid row">
+        <div class="container col-lg-5 ml-md-5">
+                <center>
+                <h1><strong>Contacts info</strong></h1>
+                <span class="bg-primary col-3 pl-4 pr-4"></span>
+                </center>
+                <br>
+            <p>We will connect you with the relevant person in charge.</p>
+            <p>Please click "Send button" after providing your registering input</p>
+            <p class="b">Add</p>
+            <p>No 45c, 210 alley Hoang Quoc Viet street Cau Giay - Ha Noi - Viet Nam</p>
+            <p class="b">TEL</p>
+            <p>(+84)-989-412-665</p>
+            <p class="b">Email</p>
+            <p>daisuke.kawashima@crevea.vn</p>
+        </div>
+        <!-- Contacts us -->
+        <div class="contact_us col-lg-6">
+            <center>
+            <h1><strong>Contacts us</strong></h1>
+            <span class="bg-primary col-3 pl-4 pr-4"></span>
+            </center>
+            <!-- MOBILE -->
+            <div class="container d-md-none">
+            <p class="b">Company Name</p>
+            <input class="col-12 p-3" placeholder="Company Name">
+            <p class="b">Your name</p>
+            <input class="col-12 p-3" placeholder="Your name">
+            <p class="b">Email address</p>
+            <input class="col-12 p-3" placeholder="Email adress">
+            <p class="b">Phone number</p>
+            <input class="col-12 p-3" placeholder="Phone number">
+            <p class="b">Your message</p>
+            <textarea  class="col-12 p-4" placeholder="Your message"></textarea>
+            <button id="submit" class="col-4 p-3 bg-warning text-white" id="msg" >Send message</button>
+            </div>
+            <!-- TABLE -->
+            <div class="row container d-none d-md-flex ml-5">
+                <div class="col-5">
+                    <p class="b p-3">Company Name</p>
+                    <p class="b p-3">Your name</p>
+                    <p class="b p-3">Email address</p>
+                    <p class="b p-3">Phone number</p>
+                    <p class="b p-3">Your message</p>
+                </div>
+                <div class="col-7">
+                <input class="col-12 p-3 " placeholder="Company Name">
+                <input class="col-12 p-3" placeholder="Your name">
+                <input class="col-12 p-3" placeholder="Email adress">                
+                <input class="col-12 p-3" placeholder="Phone number">               
+                <textarea  class="col-12 p-4" placeholder="Your message"></textarea>
+                </div>
+                <button id="submit" class="col-4 p-3 bg-warning text-white" id="msg" >Send message</button>
+            </div>
+        </ul>
+    </div>
+</div>
+    <br>
+            <img id="map" width="100%" class="img-fluid" src="../image/image (13).png">
+
+   <!-- MOBILE FOOTER -->
+   <div class="container-fluid text-light d-block d-lg-none" style="background-color: rgb(32, 30, 28);">
+    <!-- CREVEA -->
+    <div class="container">
+        <br>
+        <h3 >CREVEA</h3>
+        <p>Add:No 45c, 210 alley Hoang Quoc Viet street Cau Giay - Ha Noi - Viet Nam</p>
+        <p>TEL : (+84)-989-412-665</p>
+        <p>Email : daisuke.kawashima@crevea.vn</p>
+        <p>Follow us on:</p>
+    </div>
+
+    <!-- CATEGORYS -->
+    <div class="container">
+        <h3>CATEGORYS</h3>
+        <p>> Home</p>
+        <p>> OUR BUSINESS</p>
+        <p>> ABOUT US</p>
+        <p>> NEWS</p>
+        <p>> CONTACT</p>
+    </div>
+
+    <!-- LANGUAGE -->
+    <div class="container">
+        <h3>LANGUAGE</h3>
+        <p>> English</p>
+        <p>> Japanese</p>
+    </div>
+
+    <!-- GET OUR NEWS FROM US -->
+    <div class="container">
+        <h3>GET OUR NEWS FROM US</h3>
+    <p>Please enter the email below to not miss the latest news from us!</p>
+    <div class="row">
+        <input class="col-8 p-3 mr-2" placeholder="Your email enter">
+        <button class="col-3 p-1 ">Submit</button>
+    </div>
+    </div class="container">
+    <hr class="pt-3" style="border-color: white; border-width: 3px;">
+    <center><p style="padding-bottom: 10px;">Ⓒ 2018 CREVEA Inc. All right Reserved</p></center>
+</div>
+
+<!-- laptop FOOTER -->
+<div class="container-fluid d-none d-lg-block text-light" style="background-color: rgb(32, 30, 28);">
+<div class="row text-light d-none d-lg-flex pt-3" style="background-color: rgb(32, 30, 28);">
+<!-- CREVEA -->
+<div class="col-2" style="margin-left: 20%;">
+    <h3 >CREVEA</h3>
+    <p>Add:No 45c, 210 alley Hoang Quoc Viet street Cau Giay - Ha Noi - Viet Nam</p>
+    <p>TEL : (+84)-989-412-665</p>
+    <p>Email : daisuke.kawashima@crevea.vn</p>
+    <p>Follow us on:</p>
+</div>
+
+<!-- CATEGORYS -->
+<div class="col-2">
+    <h3>CATEGORYS</h3>
+    <p>> Home</p>
+    <p>> OUR BUSINESS</p>
+    <p>> ABOUT US</p>
+    <p>> NEWS</p>
+    <p>> CONTACT</p>
+</div>
+
+<!-- LANGUAGE -->
+<div class="col-2">
+    <h3>LANGUAGE</h3>
+    <p>> English</p>
+    <p>> Japanese</p>
+</div>
+
+<!-- GET OUR NEWS FROM US -->
+<div class="col-2">
+    <h3>GET OUR NEWS FROM US</h3>
+<p>Please enter the email below to not miss the latest news from us!</p>
+<div class="row">
+    <input class="col-8 p-3 mr-2" placeholder="Your email enter">
+    <button class="col-3 p-1 ">Submit</button>
+</div>
+</div>
+</div>
+<hr class="pt-3" style="border-color: white; border-width: 3px; width: 90%; margin-left: 5%;">
+<center><p style="padding-bottom: 30px;">Ⓒ 2018 CREVEA Inc. All right Reserved</p></center>
+</div>
+    </body>
+</html>
