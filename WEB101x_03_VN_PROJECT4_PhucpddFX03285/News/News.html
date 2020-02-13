@@ -14,8 +14,33 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
+        <script>
+            var count = 0;
+            function drop1() {
+                if(count == 0){
+                    document.getElementById("dropdown-content").style.display = "block";
+                    count = 1;
+                }else
+                if(count == 1){
+                    document.getElementById("dropdown-content").style.display = "none";
+                    count = 0;
+                }
+            }
+        </script>
         <style>
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+                    
+            #dropdown-content {
+                min-width: 160px;
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                padding: 12px 16px;
+                z-index: 1;
+            }
             p{
                 line-height: 1;
             }
@@ -85,7 +110,16 @@
     <!-- for mobile screen only -->
     <header class="container-fluid bg-white d-md-none d-block">
         <div class="row pt-4">
-            <span class="col-1 d-block d-md-none">🔽</span> 
+            <div class="dropdown">
+                <span onclick="drop1()" class="col-1 d-block d-md-none">🔽</span>
+                <div id="dropdown-content">
+                    <li><a class="text-primary" href="../Home/index.html">Home</a></li>
+                    <li><a class="text-primary" href="../Business/Business.html">OUR BUSINESS</a></li>
+                    <li><a class="text-primary" href="../About/About.html">ABOUT US</a></li>
+                    <li><a class="text-warning" href="../News/News.html">NEWS</a ></li>
+                    <li><a class="text-primary" href="../Contact/Contact.html">CONTACT</a></li>
+                </div>
+            </div>
             <h3 class="text-primary col-10 d-block text-center" >CREVEA Inc.</h3>
             <span class="col-1">🔍</span>
         </div>
